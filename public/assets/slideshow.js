@@ -13,6 +13,6 @@ var app = new Vue({
       app.currentbg = app.backgrounds[int]
       int++
       if (int > (app.backgrounds.length - 1)) { int = 0 }
-    }, 5000)
+    }, 4000)
   }
 })

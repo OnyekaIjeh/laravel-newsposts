@@ -79,6 +79,7 @@
     </div>
 </section>
 
+<span  id="who-we-are"></span>
 <!-- <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-color: rgb(255, 255, 255);"> -->
     <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-image: url(assets/images/5.jpg); background-size: cover">
     <div class="mbr-overlay" style="opacity: 0.7; background-color: white;"></div>
@@ -86,7 +87,7 @@
     <div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container">
         <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
             <div class="col-sm-8 col-sm-offset-2">
-                <h3 class="mbr-header__text" id="who-we-are">WHO WE ARE</h3>
+                <h3 class="mbr-header__text">WHO WE ARE</h3>
                 
             </div>
         </div>
@@ -145,16 +146,17 @@
     </div>
 </section>
 
+<span  id="what-we-do"></span>
 <!-- <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-i" style="background-color: rgb(204, 204, 204);"> -->
 
     <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-image: url(assets/images/2.jpg); background-size: cover">
-    <div class="mbr-overlay" style="opacity: 0.9; background-color: darkgrey;"></div> <!-- rgb(204, 204, 204) -->
+    <div class="mbr-overlay" style="opacity: 0.9; background-color: black;"></div> <!-- rgb(204, 204, 204) -->
     
     <div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container">
         
         <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
             <div class="col-sm-8 col-sm-offset-2">
-                <h3 class="mbr-header__text" id="what-we-do">WHAT WE DO</h3>
+                <h3 class="mbr-header__text">WHAT WE DO</h3>
                 
             </div>
         </div>
@@ -170,7 +172,7 @@
                     </div>
                 </div>
                 <div class="mbr-section__container mbr-section__container--last">
-                    <div data-aos="fade-left" class="mbr-article mbr-article--wysiwyg">
+                    <div data-aos="fade-left" class="mbr-article mbr-article--wysiwyg white">
                         <p>We carry out research and analytics for our clients to guide them in the strategic decision making process involved in running their business.</p>
                         <p>Which includes but not limited to;</p>
                         <ul>
@@ -192,7 +194,7 @@
                     </div>
                 </div>
                 <div class="mbr-section__container mbr-section__container--last">
-                    <div data-aos="fade-left" class="mbr-article mbr-article--wysiwyg">
+                    <div data-aos="fade-left" class="mbr-article mbr-article--wysiwyg white">
                         <p>We have a very passionate and skilled team of professionals in the area of managing and executing the agreed project brief to meet our clients goal.</p>
                         <p>Which includes but not limited to;</p>
                         <ul>
@@ -246,13 +248,14 @@
                 </div>
                 <div class="mbr-section__container mbr-section__container--last">
                     <div data-aos="fade-left" class="mbr-article mbr-article--wysiwyg">
-                        <p>We have a very passionate and skilled team of professionals in the area of managing and executing the agreed project brief to meet our clients goal.</p>
-                        <p>Which includes but not limited to;</p>
-                        <ul>
-                        	<li>Business Plan Execution</li>
-                        	<li>Product Development</li>
-                        	<li>Strategy Development and Implementation</li>
-                        	<li>Event Management</li>
+                         <ul>
+                        @forelse ($events as $event)
+                        	<li>{{$event->title}} - {{$event->created_at}}<br/>
+                                {{$event->description}}
+                            </li>
+                        @empty
+                            <li>No events.</li>
+                        @endforelse
                         </ul>
                     </div>
                 </div>
@@ -263,9 +266,10 @@
     </div>
 </section>
 
+<span  id="contact-us"></span>
 <!-- <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="form1-a" style="background-color: rgb(239, 239, 239);"> -->
       <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-image: url(assets/images/3.jpg); background-size: cover">
-    <div class="mbr-overlay" style="opacity: 0.9; background-color: darkgrey;"></div>
+    <div class="mbr-overlay" style="opacity: 0.9; background-color: black;"></div>
 
     
     <div class="mbr-section__container mbr-section__container--std-padding container" style="padding-top: 31px; padding-bottom: 31px;">
@@ -274,7 +278,7 @@
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2" data-form-type="formoid">
                         <div class="mbr-header mbr-header--center mbr-header--std-padding">
-                            <h3 class="mbr-header__text" style="color: #2c82c9;" id="contact-us">CONTACT US</h3>
+                            <h3 class="mbr-header__text" style="color: #2c82c9;">CONTACT US</h3>
                         </div>
                         <div data-form-alert="true">
                             <div class="hide" data-form-alert-success="true">Thanks for filling out form!</div>
@@ -314,8 +318,8 @@
                     </div>
                     <div class="col-sm-3">
                         <p class="mbr-contacts__text"></p><p><strong>CONTACT DETAILS</strong><br/>
-                        Email:<br/>hello@businessbaynigeria.com<br/>support@businessbaynigeria.com<br/></p>
-                        <p>Phone:<br/>+2348135664940<br/>+2347010131815<br/></p>
+                        Email:<br/><a class="contact-link" href="mailto:hello@businessbaynigeria.com">hello@businessbaynigeria.com</a> <br/><a class="contact-link" href="mailto:support@businessbaynigeria.com">support@businessbaynigeria.com</a><br/></p>
+                        <p>Phone:<br/><a class="contact-link" href="tel:+2348135664940">+2348135664940</a> <br/><a class="contact-link" href="tel:+2347010131815">+2347010131815</a><br/></p>
                     </div>
                     <div class="col-sm-3"><p class="mbr-contacts__text"><strong>FOLLOW US</strong></p>
                     <ul class="mbr-contacts__list">

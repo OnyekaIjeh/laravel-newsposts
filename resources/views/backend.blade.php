@@ -36,7 +36,21 @@
 
                  <div class="col-md-6">
                      <div class="panel panel-default">
-                        <div class="panel-heading">Event Entries</div>
+                        <div class="panel-heading">Event Entries <a href="/event/create" class="btn btn-primary btn-xs pull-right">Create a New Event</a></div>
+                         <ol>
+                            @forelse ($events as $event)
+                            
+                                <li>{{$event->title}}<br/>
+                                <a href="/event/edit/{{$event->slug}}" class="btn btn-info btn-xs">Edit Event</a>
+                                <a href="/event/delete/{{$event->slug}}" class="btn btn-danger btn-xs">Delete Event</a>
+                                <br/>
+                                    <strong>{{$event->created_at}}</strong>
+                                </li>
+                                <br/>
+                            @empty
+                                No events. <a href="/event/create" class="btn btn-primary btn-xs">Create an Event</a>
+                            @endforelse
+                        </ol>
                     </div>
                 </div>
             </div>

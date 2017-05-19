@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
- use Illuminate\Validation\Rule;
+use Illuminate\Validation\Rule;
 use App\NewsPost;
 use GrahamCampbell\Markdown\Facades\Markdown;
 
