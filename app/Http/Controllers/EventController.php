@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use App\Event;
 use GrahamCampbell\Markdown\Facades\Markdown;
+use Carbon\Carbon;
 
 class EventController extends Controller
 {
@@ -35,12 +36,14 @@ class EventController extends Controller
     {
         $this->validate($request, [
             'title' => 'required|unique:events|max:255',
+            'date' => 'required|max:255',
             'body' => 'required'
         ]);
 
         $Event = new Event;
 
         $Event->title = title_case($request->title);
+        $Event->date = $request->date;
         $Event->body = $request->body;
 
         $Event->save();
@@ -58,6 +61,7 @@ class EventController extends Controller
         $Event = Event::where('slug', $slug)->first();
 
         $Event->title = title_case($request->title);
+        $Event->date = Carbon::parse($request->date)->format('d/m/Y');
         $Event->body = $request->body;
 
         $Event->save();

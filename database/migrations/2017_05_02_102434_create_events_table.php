@@ -18,7 +18,7 @@ class CreateEventsTable extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->string('body');
-            $table->string('image')->default('default.jpg');
+            $table->string('date');
             $table->timestamps();
         });
     }

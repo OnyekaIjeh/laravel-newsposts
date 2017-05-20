@@ -26,6 +26,11 @@
 </div>
 
 <div class="form-group">
+    {!! Form::label('title', 'Date:', ['class' => 'control-label']) !!}
+    {!! Form::text('date', $event->date, ['class' => 'form-control', 'id' => 'datepicker']) !!}
+</div>
+
+<div class="form-group">
     {!! Form::label('body', 'Body:', ['class' => 'control-label']) !!}
     {!! Form::textarea('body', $event->body, ['class' => 'form-control']) !!}
 </div>

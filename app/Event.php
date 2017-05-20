@@ -30,6 +30,6 @@ class Event extends Model
         'title',
         'slug',
         'body',
-        'image'
+        'date'
     ];
 }

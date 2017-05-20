@@ -13,6 +13,8 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
 
     <!-- Scripts -->
     <script>
@@ -20,6 +22,8 @@
             'csrfToken' => csrf_token(),
         ]) !!};
     </script>
+     
+  
 </head>
 <body>
     <div id="app">
@@ -91,5 +95,14 @@
             promptURLs: true
         });
     </script>
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+        dateFormat: "dd/mm/yy"
+    });
+  } );
+  </script>
 </body>
 </html>
