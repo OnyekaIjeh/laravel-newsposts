@@ -27,7 +27,7 @@
 
 <div class="form-group">
     {!! Form::label('body', 'Body:', ['class' => 'control-label']) !!}
-    {!! Form::textarea('body', $newspost->body, ['class' => 'form-control']) !!}
+    {!! Form::textarea('body', $newspost->body, ['class' => 'form-control', 'id' => 'mdeditor']) !!}
 </div>
 
 {!! Form::submit('Save News Post', ['class' => 'btn btn-primary']) !!}

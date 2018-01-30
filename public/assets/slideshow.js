@@ -2,8 +2,8 @@ var app = new Vue({
   el: '#header4-1',
   data () {
     return {
-      backgrounds: ['background-image: url(assets/images/1.jpg);', 'background-image: url(assets/images/2.jpg);', 'background-image: url(assets/images/3.jpg);', 'background-image: url(assets/images/4.jpg);', 'background-image: url(assets/images/5.jpg);'],
-      currentbg: 'background-image: url(assets/images/1.jpg);'
+      backgrounds: ['background-image: url(\'assets/images/1.jpg\');', 'background-image: url(\'assets/images/2.jpg\');', 'background-image: url(\'assets/images/3.jpg\');', 'background-image: url(\'assets/images/4.jpg\');', 'background-image: url(\'assets/images/5.jpg\');'],
+      currentbg: 'background-image: url(\'assets/images/1.jpg\');'
     }
   },
 

@@ -26,7 +26,7 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('title', 'Date:', ['class' => 'control-label']) !!}
+    {!! Form::label('title', 'Date and Time for Event:', ['class' => 'control-label']) !!}
     {!! Form::text('date', $event->date, ['class' => 'form-control', 'id' => 'datepicker']) !!}
 </div>
 

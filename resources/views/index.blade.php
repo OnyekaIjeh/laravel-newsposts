@@ -18,15 +18,39 @@
   <link rel="stylesheet" href="assets/aos.css">
   <link rel="stylesheet" href="assets/slideshow.css">
 
+ <!-- Start of Async Drift Code -->
+<script>
+!function() {
+  var t;
+  if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+  t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+  t.factory = function(e) {
+    return function() {
+      var n;
+      return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+    };
+  }, t.methods.forEach(function(e) {
+    t[e] = t.factory(e);
+  }), t.load = function(t) {
+    var e, n, o, i;
+    e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+    o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+    n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+  });
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('n8drpk6n3f2m');
+</script>
+<!-- End of Async Drift Code -->
   
 </head>
 
 <body>
-<span style="background-image: url(assets/images/1.jpg) no-repeat -9999px -9999px;"></span>
-<span style="background-image: url(assets/images/2.jpg) no-repeat -9999px -9999px;"></span>
-<span style="background-image: url(assets/images/3.jpg) no-repeat -9999px -9999px;"></span>
-<span style="background-image: url(assets/images/4.jpg) no-repeat -9999px -9999px;"></span>
-<span style="background-image: url(assets/images/5.jpg) no-repeat -9999px -9999px;"></span>
+<span style="background-image: url('assets/images/1.jpg') no-repeat -9999px -9999px;"></span>
+<span style="background-image: url('assets/images/2.jpg') no-repeat -9999px -9999px;"></span>
+<span style="background-image: url('assets/images/3.jpg') no-repeat -9999px -9999px;"></span>
+<span style="background-image: url('assets/images/4.jpg') no-repeat -9999px -9999px;"></span>
+<span style="background-image: url('assets/images/5.jpg') no-repeat -9999px -9999px;"></span>
 
 <section id="dropdown-menu-0">
 
@@ -44,7 +68,7 @@
             </button>
 
             <ul class="nav-dropdown collapse pull-xs-right navbar-toggleable-sm nav navbar-nav" id="exCollapsingNavbar">
-            <li class="nav-item"><a class="nav-link link" href="">HOME</a></li>
+            <li class="nav-item"><a class="nav-link link" href="/">HOME</a></li>
             <li class="nav-item"><a class="nav-link link" href="#who-we-are" aria-expanded="false">WHO WE ARE</a></li>
             <li class="nav-item dropdown"><a class="nav-link link" href="#what-we-do" aria-expanded="false">WHAT WE DO</a></li>
             <li class="nav-item"><a class="nav-link link" href="#contact-us" aria-expanded="false">CONTACT US</a></li>
@@ -79,23 +103,22 @@
     </div>
 </section>
 
-<span  id="who-we-are"></span>
+<span id="who-we-are"></span>
 <!-- <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-color: rgb(255, 255, 255);"> -->
-    <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-image: url(assets/images/5.jpg); background-size: cover">
+    <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-image: url('assets/images/5.jpg'); background-size: cover">
     <div class="mbr-overlay" style="opacity: 0.7; background-color: white;"></div>
     
     <div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container">
         <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
             <div class="col-sm-8 col-sm-offset-2">
-                <h3 class="mbr-header__text">WHO WE ARE</h3>
+                <h3 class="mbr-header__text" style="padding-top: 30px">WHO WE ARE</h3>
                 
             </div>
         </div>
     </div>
     <div class="mbr-section__container container">
         <div class="mbr-section__row row">
-            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
-                
+            <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">                
                 
                 <div class="mbr-section__container mbr-section__container--last">
                     <img data-aos="fade-up" class="img-responsive img-circle" style="display: block; margin: auto; padding-bottom: 10px; width: 100px; height: 100px;" src="assets/images/agreement.svg"/>
@@ -105,6 +128,7 @@
                 </div>
                 
             </div>
+            
             <div class="mbr-section__col col-xs-12 col-md-3 col-sm-6">
                 
                 
@@ -149,14 +173,14 @@
 <span  id="what-we-do"></span>
 <!-- <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-i" style="background-color: rgb(204, 204, 204);"> -->
 
-    <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-image: url(assets/images/2.jpg); background-size: cover">
+    <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-image: url('assets/images/2.jpg'); background-size: cover">
     <div class="mbr-overlay" style="opacity: 0.9; background-color: black;"></div> <!-- rgb(204, 204, 204) -->
     
     <div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container">
         
         <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
             <div class="col-sm-8 col-sm-offset-2">
-                <h3 class="mbr-header__text">WHAT WE DO</h3>
+                <h3 class="mbr-header__text" style="padding-top: 30px">WHAT WE DO</h3>
                 
             </div>
         </div>
@@ -214,7 +238,7 @@
 
 <!-- <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-i" style="background-color: rgb(204, 204, 204);"> -->
 
-    <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-image: url(assets/images/1.jpg); background-size: cover">
+    <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-image: url('assets/images/1.jpg'); background-size: cover">
     <div class="mbr-overlay" style="opacity: 0.7; background-color: white;"></div>
     
     <div class="mbr-section__container container" style="padding-top: 31px;">
@@ -232,7 +256,7 @@
                         @forelse ($newsposts as $newspost)
                         	<li><a href="/news/{{$newspost->slug}}">{{$newspost->title}}</a> - {{$newspost->created_at}}</li>
                         @empty
-                            <li>No news post.</li>
+                            <li>No news posts.</li>
                         @endforelse
                         </ul>
                     </div>
@@ -266,20 +290,28 @@
     </div>
 </section>
 
-<span  id="contact-us"></span>
+<span id="contact-us"></span>
 <!-- <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="form1-a" style="background-color: rgb(239, 239, 239);"> -->
-      <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-image: url(assets/images/3.jpg); background-size: cover">
+      <section class="mbr-section mbr-section--relative mbr-section--fixed-size" id="features1-j" style="background-image: url('assets/images/3.jpg'); background-size: cover">
     <div class="mbr-overlay" style="opacity: 0.9; background-color: black;"></div>
 
     
-    <div class="mbr-section__container mbr-section__container--std-padding container" style="padding-top: 31px; padding-bottom: 31px;">
+    <div class="mbr-section__container mbr-section__container--std-padding container" style="padding-top: 30px; padding-bottom: 30px;">
         <div class="row">
             <div class="col-sm-12">
                 <div class="row">
+
+<div class="mbr-section__container mbr-section__container--std-top-padding mbr-section__container--sm-bot-padding mbr-section-title container">
+        <div class="mbr-header mbr-header--center mbr-header--wysiwyg row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3 class="mbr-header__text">CONTACT US</h3>
+                
+            </div>
+        </div>
+    </div>
+
+
                     <div class="col-sm-8 col-sm-offset-2" data-form-type="formoid">
-                        <div class="mbr-header mbr-header--center mbr-header--std-padding">
-                            <h3 class="mbr-header__text" style="color: #2c82c9;">CONTACT US</h3>
-                        </div>
                         <div data-form-alert="true">
                             <div class="hide" data-form-alert-success="true">Thanks for filling out form!</div>
                         </div>
@@ -362,6 +394,6 @@
   </script>
   <script src="assets/vue.js"></script>
   <script src="assets/slideshow.js"></script>
-  <script src="assets/tawk.js"></script>
+  <!-- <script src="assets/tawk.js"></script> -->
 </body>
 </html>

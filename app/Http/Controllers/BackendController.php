@@ -10,20 +10,11 @@ use App\Event;
 class BackendController extends Controller
 {
     /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-    /**
      * Show the application dashboard.
      *
      * @return \Illuminate\Http\Response
      */
+     
     public function index()
     {
         $newsposts = NewsPost::orderBy('created_at', 'DESC')->get();

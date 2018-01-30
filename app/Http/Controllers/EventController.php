@@ -10,17 +10,6 @@ use Carbon\Carbon;
 
 class EventController extends Controller
 {
-    //
-      /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     public function create()
     {
         return view('event.create');
@@ -55,13 +44,14 @@ class EventController extends Controller
     {
         $this->validate($request, [
             'title' => ['required', Rule::unique('events')->ignore($slug, 'slug'), 'max:255'],
+            'date' => 'required|max:255',
             'body' => 'required'
         ]);
 
         $Event = Event::where('slug', $slug)->first();
 
         $Event->title = title_case($request->title);
-        $Event->date = Carbon::parse($request->date)->format('d/m/Y');
+        $Event->date = $request->date;
         $Event->body = $request->body;
 
         $Event->save();

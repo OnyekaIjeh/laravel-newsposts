@@ -35,11 +35,11 @@ class NewsPost extends Model
 
     public function getCreatedAtAttribute($value)
     {
-        return Carbon::parse($value)->toFormattedDateString();
+        return Carbon::parse($value)->toDayDateTimeString();
     }
 
     public function getUpdatedAtAttribute($value)
     {
-        return Carbon::parse($value)->toFormattedDateString();        
+        return Carbon::parse($value)->toDayDateTimeString();        
     }
 }

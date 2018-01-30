@@ -26,8 +26,8 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('title', 'Date:', ['class' => 'control-label']) !!}
-    {!! Form::text('date', \Carbon\Carbon::now()->format('d/m/Y'), ['class' => 'form-control', 'id' => 'datepicker']) !!}
+    {!! Form::label('title', 'Date and Time for Event:', ['class' => 'control-label']) !!}
+    {!! Form::text('date', \Carbon\Carbon::now(), ['class' => 'form-control', 'id' => 'datepicker']) !!}
 </div>
 
 <div class="form-group">
