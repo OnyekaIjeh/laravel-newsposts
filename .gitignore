@@ -1,6 +1,8 @@
 
 /public/hot
 /public/storage
+/node_modules
+/storage
 /.idea
 /.vagrant
 Homestead.json
